@@ -1,0 +1,27 @@
+import random
+
+#vbles
+user_moves = input("Enter a choice (rock, paper, scissors): ")
+possible_moves = ["rock", "paper", "scissors"]
+computer_moves = random.choice(possible_moves)
+
+#idk
+print(f"\nYou chose {user_moves}, computer chose {computer_moves}.\n")
+
+if user_moves == computer_moves:
+    print("both players chose {user_moves}, its a draw :/")
+elif user_moves == "rock": 
+    if computer_moves == "scissors":
+    #add name feature
+        print("gg user, rock breaks scissors")
+    else: print("lol I win, paper covers rock")
+elif user_moves == "scissors":
+    if computer_moves == "rock":
+        print("I win, my rock smashes you scissors :P")
+    else: print("you won... my paper got cut")
+elif user_moves == "paper":
+    if computer_moves == "rock":
+        print("I lost, my rock got covered by your paper")
+    else: print("u win lol")
+
+
